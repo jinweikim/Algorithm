@@ -1,3 +1,4 @@
+import java.util.Collections;
 import java.util.Scanner;
 
 public class HexToDec {
@@ -10,8 +11,10 @@ public class HexToDec {
             for(int i = length -1; i > 1; i--) {
                 char charNum = str.charAt(i);
                 int num;
+                // 字符为 0-9
                 if (charNum < 65) {
                     num = charNum - '0';
+                // 字符为 A-E
                 } else {
                     num = charNum - 55;
                 }

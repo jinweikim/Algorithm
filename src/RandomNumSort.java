@@ -5,7 +5,7 @@ public class RandomNumSort {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNextInt()) {
             int count = sc.nextInt();
-            boolean[] table = new boolean[1024]; // all false
+            boolean[] table = new boolean[1000]; // all false
             for (int i = 0; i < count; i++) {
                 int num = sc.nextInt();
                 table[num] = true;
