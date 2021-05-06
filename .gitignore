@@ -1,2 +1,5 @@
 /.idea/
 Algorithm.iml
+out/
+.gitignore
+
