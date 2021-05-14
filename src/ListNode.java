@@ -1,3 +1,5 @@
+import java.util.List;
+
 // 单链表
 public class ListNode{
 
@@ -25,5 +27,22 @@ public class ListNode{
             node = node.next;
         }
         System.out.println(stringBuilder);
+    }
+
+    // 通过数组构建链表
+    public static ListNode create(int[] nums) {
+        if (nums.length == 0) {
+            return null;
+        }
+        ListNode head = new ListNode(nums[0]);
+        ListNode cur = head;
+        for (int i = 1; i < nums.length; i++) {
+            ListNode nextNode = new ListNode(nums[i]);
+            cur.next = nextNode;
+            cur = cur.next;
+        }
+        System.out.println("构建好的链表为: " );
+        head.printList();
+        return head;
     }
 }
