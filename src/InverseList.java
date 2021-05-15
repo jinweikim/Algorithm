@@ -96,6 +96,22 @@ public class InverseList {
         return pre;
     }
 
+    public ListNode reverseList2(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        ListNode pre = null;
+        ListNode cur = head;
+        while (cur != null) {
+            ListNode next = cur.next;
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+        }
+        return pre;
+
+    }
+
     // 迭代方式反转开头到b处的链表, 未连接，[head,b), 左闭右开
     public static ListNode inversePartListIteration(ListNode head, ListNode b){
         ListNode pre = null;
