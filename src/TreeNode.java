@@ -26,10 +26,10 @@ public class TreeNode{
 
         for(int i=0;i<nodeList.size();i++){
 
-            if( i*2+1 < nodeList.size()){
+            if( i*2+1 < nodeList.size() && nodeList.get(i) != null){
                 nodeList.get(i).left = nodeList.get(i*2+1);
             }
-            if( i*2+2 < nodeList.size() ){
+            if( i*2+2 < nodeList.size() && nodeList.get(i) != null){
                 nodeList.get(i).right = nodeList.get(i*2+2);
             }
         }
