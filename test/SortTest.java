@@ -1,12 +1,13 @@
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class SortTest {
+    Sort sort = new Sort();
+    int[] nums = {1, 3, 8, 2, 5, 10, 3};
     @Test
     void insertSortTest() {
-        Sort sort = new Sort();
-        int[] nums = {1, 3, 8, 2, 5, 10, 3};
         sort.insertSort(nums);
         for (int i : nums) {
             System.out.print(i + " ");
@@ -14,4 +15,19 @@ class SortTest {
 
     }
 
+    @Test
+    void quickSortTest() {
+        sort.quickSort(nums);
+        for (int i : nums) {
+            System.out.print(i + " ");
+        }
+    }
+
+    @Test
+    void mergeSortTest() {
+        sort.mergeSort(nums);
+        for (int i : nums) {
+            System.out.print(i + " ");
+        }
+    }
 }
