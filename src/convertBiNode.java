@@ -1,14 +1,12 @@
 import java.util.Stack;
 
 
-
-
 public class convertBiNode {
 
     public static TreeNode newNode = new TreeNode(0);
     public static TreeNode currentNode = newNode;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         TreeNode node4 = new TreeNode(4);
         TreeNode node6 = new TreeNode(6);
@@ -40,9 +38,9 @@ public class convertBiNode {
 
     }
 
-    public static void inorder(TreeNode root){
+    public static void inorder(TreeNode root) {
 
-        if(root == null){
+        if (root == null) {
             return;
         }
         inorder(root.left);
@@ -50,7 +48,7 @@ public class convertBiNode {
         inorder(root.right);
     }
 
-    public static void visit(TreeNode root){
+    public static void visit(TreeNode root) {
         System.out.println(root.val);
         currentNode.left = null;
         currentNode.right = root;
@@ -59,9 +57,9 @@ public class convertBiNode {
     }
 
     //中序遍历，仅仅打印节点值
-    public static void inorderPrin(TreeNode root){
+    public static void inorderPrin(TreeNode root) {
 
-        if(root == null){
+        if (root == null) {
             return;
         }
         inorderPrin(root.left);
@@ -69,16 +67,16 @@ public class convertBiNode {
         inorderPrin(root.right);
     }
 
-    public static void inorderNoRec(TreeNode root){
+    public static void inorderNoRec(TreeNode root) {
 
         TreeNode tn = root;
         Stack<TreeNode> stack = new Stack<>();
 
-        while( tn != null || !stack.isEmpty()){
-            if( tn != null){
+        while (tn != null || !stack.isEmpty()) {
+            if (tn != null) {
                 stack.push(tn);
                 tn = tn.left;
-            }else{
+            } else {
                 tn = stack.pop();
                 currentNode.left = null;
                 currentNode.right = tn;
