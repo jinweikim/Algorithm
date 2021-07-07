@@ -6,6 +6,11 @@ public class inverseNum {
             res = res * 10 + n;
             paraNum /= 10;
         }
+        System.out.println(Integer.MAX_VALUE);
+        System.out.println(Math.pow(2, 31) - 1);
+        if (res > Integer.MAX_VALUE) {
+            return 0;
+        }
         return res;
     }
 }

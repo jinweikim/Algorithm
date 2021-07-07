@@ -1,14 +1,14 @@
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class inverseNumTest {
+class LongestPalinSubStrTest {
     @Test
     void test() {
-        inverseNum in = new inverseNum();
-        int res = in.reverseNum(-123);
+        LongestPalinSubStr lpss = new LongestPalinSubStr();
+        String res = lpss.longestPalindrome("cbbd");
         System.out.println(res);
     }
+
 
 }

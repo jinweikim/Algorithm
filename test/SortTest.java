@@ -26,6 +26,11 @@ class SortTest {
     @Test
     void mergeSortTest() {
         sort.mergeSort(nums);
+    }
+
+    @Test
+    void heapSortTest() {
+        sort.heapSort(nums);
         for (int i : nums) {
             System.out.print(i + " ");
         }

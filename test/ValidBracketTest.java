@@ -1,13 +1,12 @@
-
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class inverseNumTest {
+class ValidBracketTest {
     @Test
     void test() {
-        inverseNum in = new inverseNum();
-        int res = in.reverseNum(-123);
+        ValidBracket vb = new ValidBracket();
+        boolean res = vb.isValid("()[]{}");
         System.out.println(res);
     }
 
