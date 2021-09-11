@@ -1,6 +1,5 @@
+import Exercise.JC11;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class JC11Test {
     @Test

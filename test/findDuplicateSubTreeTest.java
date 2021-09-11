@@ -1,6 +1,6 @@
+import Exercise.TreeNode;
+import Exercise.findDuplicateSubTree;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class findDuplicateSubTreeTest {
 

@@ -1,8 +1,8 @@
+import Exercise.BinaryTreeNoRecur;
+import Exercise.TreeNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class BinaryTreeNoRecurTest {
     @Test

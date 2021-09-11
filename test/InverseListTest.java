@@ -1,6 +1,6 @@
+import Exercise.InverseList;
+import Exercise.ListNode;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class InverseListTest {
     @Test

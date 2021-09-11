@@ -1,6 +1,5 @@
+import Exercise.Exam_07_18_04;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Exam_07_18_04Test {
     @Test

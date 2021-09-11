@@ -1,3 +1,4 @@
+import Exercise.MergeArea;
 import org.junit.jupiter.api.Test;
 
 class MergeAreaTest {

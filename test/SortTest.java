@@ -1,7 +1,5 @@
-import org.junit.jupiter.api.AfterAll;
+import Exercise.Sort;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class SortTest {
     Sort sort = new Sort();

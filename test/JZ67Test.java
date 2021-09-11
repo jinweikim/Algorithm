@@ -1,6 +1,5 @@
+import Exercise.JZ67;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class JZ67Test {
     @Test

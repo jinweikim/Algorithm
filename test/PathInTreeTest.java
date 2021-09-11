@@ -1,6 +1,6 @@
+import Exercise.PathInTree;
+import Exercise.TreeNode;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PathInTreeTest {
     @Test

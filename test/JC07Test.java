@@ -1,6 +1,6 @@
+import Exercise.JC07;
+import Exercise.TreeNode;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class JC07Test {
 
